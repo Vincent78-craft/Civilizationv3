@@ -1,0 +1,137 @@
+# CivilizationMC Configuration File
+# Version: 3.0.0
+
+# Language settings
+language: "fr"
+
+# Storage settings
+storage:
+  type: "JSON" # JSON, SQLITE, MYSQL
+  mysql:
+    url: "jdbc:mysql://localhost:3306/civilizations"
+    username: "root"
+    password: ""
+    pool-size: 10
+
+# Economy settings
+economy:
+  enabled: true
+
+# Civilization creation cost
+create-cost: 0.0
+
+# Cost per claim
+cost-per-claim:
+  enabled: false
+  cost: 100.0
+
+# Upgrade system
+upgrades:
+  levels:
+    1:
+      claims-max: 5
+      cost: 0
+      bonuses:
+        - "banner"
+    2:
+      claims-max: 10
+      cost: 500
+      bonuses: []
+    3:
+      claims-max: 20
+      cost: 1000
+      bonuses: []
+    4:
+      claims-max: 35
+      cost: 2500
+      bonuses: []
+    5:
+      claims-max: 55
+      cost: 5000
+      bonuses: []
+    6:
+      claims-max: 80
+      cost: 10000
+      bonuses: []
+    7:
+      claims-max: 115
+      cost: 17500
+      bonuses: []
+    8:
+      claims-max: 150
+      cost: 25000
+      bonuses:
+        - "tax_cap:+5%"
+
+# World settings
+worlds:
+  enabled:
+    - "world"
+    - "world_nether"
+  world:
+    claim-enabled: true
+  world_nether:
+    claim-enabled: false
+  world_the_end:
+    claim-enabled: false
+
+# Protection settings
+protection:
+  enabled: true
+  message-cooldown-seconds: 2
+  spawn-protection-radius: 100
+
+# War system
+war:
+  enabled: true
+  warmup-minutes: 15
+  cooldown-minutes: 60
+  pvp-everywhere: false
+  max-active-wars: 3
+
+# Alliance system
+alliance:
+  enabled: true
+  max-per-civ: 3
+  trusted-allies: true
+
+# Home system
+home:
+  cooldown-seconds: 10
+  warmup-seconds: 3
+
+# Invitation system
+invite:
+  expire-minutes: 60
+
+# Chat system
+chat:
+  prefix: "&8[&6CIV&8]&r"
+  spy-enabled: true
+
+# Bank system
+bank:
+  withdraw-limit: 10000.0
+  withdraw-cooldown-minutes: 0
+
+# Map settings
+map:
+  ascii-radius: 5
+  gui-size: 54
+
+# Autosave interval (minutes)
+autosave-minutes: 10
+
+# Maintenance mode
+maintenance-mode: false
+
+# Admin settings
+admin:
+  log-actions: true
+  confirm-destructive: true
+
+# Performance settings
+performance:
+  cache-claims: true
+  async-saves: true
+  batch-size: 100

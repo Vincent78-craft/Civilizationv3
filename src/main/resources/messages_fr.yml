@@ -1,0 +1,205 @@
+# Messages en français pour CivilizationMC
+# Version: 3.0.0
+
+# Préfixe
+prefix: "&8[&6Civilisation&8]&r"
+
+# Messages d'erreur généraux
+no-permission: "&cVous n'avez pas la permission d'utiliser cette commande."
+player-only: "&cCette commande ne peut être utilisée que par un joueur."
+must-be-leader: "&cSeul le leader de la civilisation peut faire cela."
+must-be-officer: "&cSeul un officier ou le leader peut faire cela."
+not-in-civ: "&cVous n'êtes dans aucune civilisation."
+already-in-civ: "&cVous êtes déjà dans une civilisation."
+invalid-arguments: "&cArguments invalides. Utilisez /cv help pour l'aide."
+error-occurred: "&cUne erreur s'est produite. Veuillez contacter un administrateur."
+maintenance-mode: "&cLe plugin est en mode maintenance."
+
+# Civilisation
+civ-created: "&aVotre civilisation &6{name}&a a été créée avec succès!"
+civ-deleted: "&cLa civilisation &6{name}&c a été supprimée."
+civ-not-found: "&cCivilisation non trouvée: &6{name}"
+civ-name-taken: "&cLe nom de civilisation &6{name}&c est déjà pris."
+civ-name-invalid: "&cLe nom de civilisation contient des caractères invalides."
+civ-disbanded: "&cVotre civilisation a été dissoute."
+civ-renamed: "&aVotre civilisation a été renommée en &6{name}&a."
+
+# Membres
+invite-sent: "&aInvitation envoyée à &6{player}&a."
+invite-received: "&aVous avez reçu une invitation de la civilisation &6{civ}&a. Utilisez /cv invitations pour voir vos invitations."
+invite-expired: "&cL'invitation de &6{civ}&c a expiré."
+invite-not-found: "&cInvitation non trouvée."
+joined-civ: "&a{player} a rejoint la civilisation!"
+declined-invite: "&cVous avez refusé l'invitation de &6{civ}&c."
+left-civ: "&c{player} a quitté la civilisation."
+member-kicked: "&c{player} a été expulsé de la civilisation."
+member-promoted: "&a{player} a été promu au rang de {role}."
+member-demoted: "&c{player} a été rétrogradé au rang de {role}."
+leader-transferred: "&aLe leadership a été transféré à &6{player}&a."
+cannot-kick-leader: "&cVous ne pouvez pas expulser le leader."
+cannot-kick-higher-rank: "&cVous ne pouvez pas expulser quelqu'un de rang supérieur."
+max-members-reached: "&cLa civilisation a atteint le nombre maximum de membres."
+
+# Banque
+deposit-ok: "&aVous avez déposé &6{amount}$ &adans la banque de la civilisation."
+withdraw-ok: "&aVous avez retiré &6{amount}$ &ade la banque de la civilisation."
+insufficient-funds: "&cFonds insuffisants. Vous avez &6{balance}$&c."
+insufficient-bank: "&cLa banque de la civilisation n'a pas assez de fonds."
+bank-balance: "&aSolde de la banque: &6{balance}$"
+invalid-amount: "&cMontant invalide."
+withdraw-limit-exceeded: "&cVous ne pouvez pas retirer plus de &6{limit}$&c à la fois."
+withdraw-cooldown: "&cVous devez attendre {time} avant de pouvoir retirer à nouveau."
+
+# Claims
+claim-ok: "&aChunk revendiqué avec succès! ({x}, {z})"
+claim-limit-reached: "&cVous avez atteint la limite de chunks ({limit})."
+claim-already-claimed: "&cCe chunk est déjà revendiqué par &6{civ}&c."
+claim-protected: "&cCette zone est protégée par &6{civ}&c."
+claim-world-disabled: "&cLes revendications sont désactivées dans ce monde."
+unclaim-ok: "&aChunk abandounn avec succès! ({x}, {z})"
+not-claimed: "&cCe chunk n'est pas revendiqué."
+not-your-claim: "&cCe chunk n'appartient pas à votre civilisation."
+
+# Home
+home-set: "&aPoint d'apparition de la civilisation défini!"
+home-not-set: "&cAucun point d'apparition défini. Utilisez /cv sethome."
+home-teleporting: "&aTéléportation vers le point d'apparition dans {time} secondes..."
+home-canceled-move: "&cTéléportation annulée car vous avez bougé."
+home-must-be-in-claim: "&cVous devez être dans un chunk de votre civilisation."
+
+# Améliorations
+upgrade-ready: "&aNiveau {next} disponible! Coût: &6{cost}$"
+upgrade-done: "&aCivilisation améliorée au niveau &6{level}&a!"
+upgrade-max-level: "&cVotre civilisation est déjà au niveau maximum."
+upgrade-insufficient-funds: "&cFonds insuffisants. Coût: &6{cost}$"
+
+# Alliances
+ally-request-sent: "&aDemande d'alliance envoyée à &6{civ}&a."
+ally-request-received: "&a{civ} propose une alliance. Utilisez /cv ally accept {civ} pour accepter."
+ally-request-accepted: "&aAlliance formée avec &6{civ}&a!"
+ally-removed: "&cAlliance rompue avec &6{civ}&c."
+ally-not-found: "&cAlliance non trouvée."
+ally-limit-reached: "&cVous avez atteint le nombre maximum d'alliances ({max})."
+already-allies: "&cVous êtes déjà alliés avec &6{civ}&c."
+
+# Guerres
+war-declared: "&c{civA} a déclaré la guerre à {civB}!"
+war-started: "&cLa guerre entre {civA} et {civB} a commencé!"
+war-ended: "&aLa guerre entre {civA} et {civB} s'est terminée."
+war-prep-phase: "&ePhase de préparation... Guerre commence dans {time}."
+peace-proposed: "&aProposition de paix envoyée à &6{civ}&a."
+peace-accepted: "&aLa paix a été acceptée avec &6{civ}&a."
+war-cooldown: "&cVous devez attendre {time} avant de déclarer une nouvelle guerre."
+already-at-war: "&cVous êtes déjà en guerre avec &6{civ}&c."
+cannot-war-ally: "&cVous ne pouvez pas déclarer la guerre à un allié."
+
+# Trust
+trust-added: "&a{player} peut maintenant {flags} dans ce chunk."
+trust-removed: "&c{player} n'a plus accès à ce chunk."
+trust-list-header: "&6=== Accès pour ce chunk ==="
+trust-list-entry: "&a{player}: &7{flags}"
+trust-list-empty: "&7Aucun accès spécial dans ce chunk."
+trust-invalid-flag: "&cType d'accès invalide. Utilisez: build, container, interact, all"
+
+# Flags
+flag-set: "&aFlag {flag} défini à {value} pour ce chunk."
+flag-invalid: "&cFlag invalide. Flags disponibles: pvp, explosions, interact, containers, redstone, mobs"
+flag-invalid-value: "&cValeur invalide. Utilisez: on, off, inherit (pour pvp) ou members, allies, public"
+
+# Chat
+chat-toggled-on: "&aChat de civilisation activé."
+chat-toggled-off: "&cChat de civilisation désactivé."
+chat-format: "&8[&6{civ}&8] &7{player}: &f{message}"
+spy-chat-toggled-on: "&aEspionnage du chat activé."
+spy-chat-toggled-off: "&cEspionnage du chat désactivé."
+
+# Admin
+admin-action-logged: "&aAction administrative enregistrée."
+admin-civ-deleted: "&cCivilisation {civ} supprimée."
+admin-player-forced-join: "&a{player} forcé à rejoindre {civ}."
+admin-level-set: "&aNiveau de {civ} défini à {level}."
+admin-money-set: "&aFonds de {civ} définis à {amount}$."
+admin-claim-forced: "&aChunk forcé pour {civ}."
+admin-war-forced: "&aGuerre forcée entre {civA} et {civB}."
+admin-purge-completed: "&a{count} joueurs inactifs supprimés."
+
+# Confirmations
+confirm-disband: "&cÊtes-vous sûr de vouloir dissoudre votre civilisation? Tapez /cv disband confirm"
+confirm-delete: "&cÊtes-vous sûr de vouloir supprimer {civ}? Tapez la commande à nouveau pour confirmer."
+confirm-war: "&cÊtes-vous sûr de vouloir déclarer la guerre à {civ}? Cliquez pour confirmer."
+confirm-action-cancelled: "&cAction annulée."
+confirm-action-accepted: "&aAction confirmée."
+
+# Informations
+info-header: "&6=== Information sur {civ} ==="
+info-leader: "&eLeader: &f{leader}"
+info-level: "&eNiveau: &f{level}"
+info-members: "&eMembres: &f{count}/{max}"
+info-claims: "&eChunks: &f{count}/{max}"
+info-bank: "&eBanque: &f{balance}$"
+info-allies: "&eAlliés: &f{allies}"
+info-wars: "&eGuerres: &f{wars}"
+info-created: "&eCréée: &f{date}"
+
+# Liste
+list-header: "&6=== Civilisations ({page}/{maxPage}) ==="
+list-entry: "&a{name} &7- Niveau {level} - {members} membres"
+list-empty: "&7Aucune civilisation trouvée."
+
+# GUI
+gui-previous-page: "&aPage précédente"
+gui-next-page: "&aPage suivante"
+gui-close: "&cFermer"
+gui-back: "&eRetour"
+gui-confirm: "&aConfirmer"
+gui-cancel: "&cAnnuler"
+
+# Map
+map-legend: "&6=== Légende ==="
+map-own: "&a■ &7Votre civilisation"
+map-ally: "&b■ &7Allié"
+map-enemy: "&c■ &7Ennemi"
+map-neutral: "&e■ &7Neutre"
+map-unclaimed: "&8■ &7Non revendiqué"
+
+# Divers
+reload-complete: "&aConfiguration rechargée!"
+save-complete: "&aDonnées sauvegardées!"
+teleport-request-sent: "&aDemande de téléportation envoyée à {player}."
+teleport-request-received: "&a{player} demande à se téléporter vers vous. /cv tpaccept pour accepter."
+
+# Temps
+time-seconds: "{time} secondes"
+time-minutes: "{time} minutes"
+time-hours: "{time} heures"
+time-days: "{time} jours"
+
+# Placeholder messages
+placeholder-no-civ: "Aucune"
+placeholder-no-leader: "Aucun"
+placeholder-no-home: "Non défini"
+
+# Help messages
+help-header: "&6=== Aide CivilizationMC ==="
+help-create: "&e/cv create <nom>&f - Créer une civilisation"
+help-disband: "&e/cv disband&f - Dissoudre votre civilisation"
+help-info: "&e/cv info [nom]&f - Voir les infos d'une civilisation"
+help-list: "&e/cv list&f - Lister les meilleures civilisations"
+help-invite: "&e/cv invite <joueur>&f - Inviter un joueur"
+help-join: "&e/cv join&f - Rejoindre une civilisation"
+help-leave: "&e/cv leave&f - Quitter votre civilisation"
+help-bank: "&e/cv bank <deposit/withdraw/balance> [montant]&f - Gestion de la banque"
+help-claim: "&e/cv claim&f - Revendiquer le chunk actuel"
+help-unclaim: "&e/cv unclaim&f - Abandonner le chunk actuel"
+help-home: "&e/cv home&f - Se téléporter au point d'apparition"
+help-sethome: "&e/cv sethome&f - Définir le point d'apparition"
+help-members: "&e/cv members&f - Gérer les membres (GUI)"
+help-claims: "&e/cv claims&f - Voir les chunks revendiqués (GUI)"  
+help-settings: "&e/cv settings&f - Paramètres de civilisation (GUI)"
+help-upgrade: "&e/cv upgrade&f - Améliorer le niveau (GUI)"
+help-war: "&e/cv war <civ>&f - Déclarer la guerre"
+help-ally: "&e/cv ally <civ>&f - Proposer une alliance"
+help-kick: "&e/cv kick <joueur>&f - Expulser un membre"
+help-promote: "&e/cv promote <joueur>&f - Promouvoir un membre"
+help-map: "&e/cv map&f - Carte des revendications"
+unknown-command: "&cCommande inconnue. Utilisez /cv help pour l'aide."

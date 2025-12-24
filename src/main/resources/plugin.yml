@@ -1,0 +1,230 @@
+name: CivilizationMC
+version: 3.0.0
+main: com.civmc.CivilizationMC
+api-version: 1.19
+authors: Vincent
+
+depend:
+  - Vault
+
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  cv:
+    description: Main civilization command
+    usage: /<command> help
+    aliases: [civ, civilization]
+  cvadmin:
+    description: Admin civilization commands
+    usage: /<command> help
+    permission: civilization.admin
+
+permissions:
+  civilization.*:
+    description: All civilization permissions
+    children:
+      civilization.use: true
+      civilization.create: true
+      civilization.admin.*: true
+
+  civilization.use:
+    description: Basic civilization usage
+    default: true
+
+  civilization.create:
+    description: Create a civilization
+    default: true
+
+  civilization.disband:
+    description: Disband your civilization
+    default: true
+
+  civilization.rename:
+    description: Rename your civilization
+    default: true
+
+  civilization.info:
+    description: View civilization info
+    default: true
+
+  civilization.list:
+    description: List civilizations
+    default: true
+
+  civilization.invite:
+    description: Invite players to civilization
+    default: true
+
+  civilization.join:
+    description: Join a civilization
+    default: true
+
+  civilization.leave:
+    description: Leave a civilization
+    default: true
+
+  civilization.kick:
+    description: Kick members from civilization
+    default: true
+
+  civilization.promote:
+    description: Promote members
+    default: true
+
+  civilization.demote:
+    description: Demote members
+    default: true
+
+  civilization.transferleader:
+    description: Transfer leadership
+    default: true
+
+  civilization.bank.deposit:
+    description: Deposit money to civilization bank
+    default: true
+
+  civilization.bank.withdraw:
+    description: Withdraw money from civilization bank
+    default: true
+
+  civilization.bank.view:
+    description: View civilization bank balance
+    default: true
+
+  civilization.sethome:
+    description: Set civilization home
+    default: true
+
+  civilization.home:
+    description: Teleport to civilization home
+    default: true
+
+  civilization.claim:
+    description: Claim chunks for civilization
+    default: true
+
+  civilization.unclaim:
+    description: Unclaim chunks
+    default: true
+
+  civilization.claimmap:
+    description: View claim map
+    default: true
+
+  civilization.map:
+    description: Open map GUI
+    default: true
+
+  civilization.setflag:
+    description: Set claim flags
+    default: true
+
+  civilization.trust.manage:
+    description: Manage chunk trusts
+    default: true
+
+  civilization.upgrade:
+    description: Upgrade civilization level
+    default: true
+
+  civilization.banner:
+    description: Set civilization banner
+    default: true
+
+  civilization.members.gui:
+    description: Open members GUI
+    default: true
+
+  civilization.claims.gui:
+    description: Open claims GUI
+    default: true
+
+  civilization.settings.gui:
+    description: Open settings GUI
+    default: true
+
+  civilization.ally:
+    description: Manage alliances
+    default: true
+
+  civilization.war:
+    description: Declare and manage wars
+    default: true
+
+  civilization.peace:
+    description: Make peace
+    default: true
+
+  civilization.chat:
+    description: Use civilization chat
+    default: true
+
+  civilization.tpa:
+    description: Teleport request to members
+    default: true
+
+  civilization.admin.*:
+    description: All admin permissions
+    default: op
+    children:
+      civilization.admin.reload: true
+      civilization.admin.save: true
+      civilization.admin.delete: true
+      civilization.admin.forcejoin: true
+      civilization.admin.level: true
+      civilization.admin.money: true
+      civilization.admin.claim: true
+      civilization.admin.unclaimall: true
+      civilization.admin.transfer: true
+      civilization.admin.spychat: true
+      civilization.admin.war: true
+      civilization.admin.purge: true
+
+  civilization.admin.reload:
+    description: Reload plugin configuration
+    default: op
+
+  civilization.admin.save:
+    description: Force save data
+    default: op
+
+  civilization.admin.delete:
+    description: Delete civilizations
+    default: op
+
+  civilization.admin.forcejoin:
+    description: Force join players to civilizations
+    default: op
+
+  civilization.admin.level:
+    description: Set civilization levels
+    default: op
+
+  civilization.admin.money:
+    description: Modify civilization bank balances
+    default: op
+
+  civilization.admin.claim:
+    description: Force claim chunks
+    default: op
+
+  civilization.admin.unclaimall:
+    description: Unclaim all chunks for a civilization
+    default: op
+
+  civilization.admin.transfer:
+    description: Transfer civilization ownership
+    default: op
+
+  civilization.admin.spychat:
+    description: Spy on civilization chat
+    default: op
+
+  civilization.admin.war:
+    description: Force start/stop wars
+    default: op
+
+  civilization.admin.purge:
+    description: Purge inactive players
+    default: op
